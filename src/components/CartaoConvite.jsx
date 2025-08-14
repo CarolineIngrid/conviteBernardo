@@ -72,7 +72,7 @@ const CartaoConvite = ({ dados }) => {
       <div className="w-4/5 mt-4 z-10 flex flex-col gap-2">
         <BotaoLink
           texto="confirme sua presença"
-          href={`https://wa.me/${dados.whatsapp}?text=${encodeURIComponent(dados.mensagemWhatsapp)}`}
+          href={`https://wa.me/+5538988537275?text=${encodeURIComponent("Olá, quero confirmar minha presença pro aniversário do Bê!")}`}
         />
         <BotaoLink
           texto="local"
