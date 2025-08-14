@@ -14,8 +14,11 @@ const BotaoLink = ({ texto, cor = "#7fc6d6", href, target = "_blank" }) => (
     href={href}
     target={target}
     rel="noopener noreferrer"
-    className="block w-full my-2 py-3 rounded-lg text-center font-semibold text-[#24706b] text-lg shadow transition hover:brightness-95"
-    style={{ background: cor }}
+    className="block w-full my-2 py-3 rounded-lg text-center text-[#24706b] text-lg shadow transition hover:brightness-95"
+    style={{ 
+      background: cor,
+      fontFamily: "'Londrina Solid', Arial, sans-serif"
+    }}
   >
     {texto}
   </a>
@@ -47,8 +50,18 @@ const CartaoConvite = ({ dados }) => {
 
       {/* Nome e idade */}
       <div className="text-center mt-4 z-10">
-        <h1 className="text-[#f6a623] text-4xl font-serif">{dados.nome}</h1>
-        <h2 className="text-green-700 text-2xl font-bold">{dados.idade}</h2>
+        <h1
+          className="text-[#f6a623] text-5xl"
+          style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
+        >
+          {dados.nome}
+        </h1>
+        <h2
+          className="text-green-700 text-3xl font-bold"
+          style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
+        >
+          {dados.idade}
+        </h2>
       </div>
 
       {/* Foto do bebê */}
@@ -65,7 +78,12 @@ const CartaoConvite = ({ dados }) => {
 
       {/* Horário */}
       <div className="mt-2 z-10">
-        <p className="text-2xl font-bold text-green-700">{dados.data.horario}</p>
+        <p
+          className="text-3xl font-bold text-green-700"
+          style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
+        >
+          {dados.data.horario}
+        </p>
       </div>
 
       {/* Botões interativos */}

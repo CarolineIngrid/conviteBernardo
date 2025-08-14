@@ -11,7 +11,7 @@ function App() {
       dia: "07",
       mes: "09",
       ano: "2025",
-      horario: "17:30"
+      horario: "18:00 HRS",
     }
   }
 
