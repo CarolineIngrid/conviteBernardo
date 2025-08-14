@@ -7,29 +7,29 @@
 }
 
 /* Container principal */
-.container-app {
+/* .container-app {
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
-}
+} */
 
 /* Estilos do cartão convite */
-.container-convite {
+/* .container-convite {
   width: 100%;
   max-width: 400px;
-  min-height: 600px;
+  min-height: 800px;
   background: linear-gradient(to bottom, #ffffff, #e6f3ff);
   border-radius: 20px;
   padding: 20px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+} */
 
 /* Seção do nome */
-.secao-nome {
+/* .secao-nome {
   text-align: center;
   margin: 20px 0;
 }
@@ -45,18 +45,18 @@
   color: #4CAF50;
   font-size: 1.8rem;
   margin: 5px 0;
-}
+} */
 
 /* Seção da data */
-.secao-data {
+/* .secao-data {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
-}
+} */
 
 /* Círculos da data */
-.circulo-data {
+/* .circulo-data {
   width: 60px;
   height: 60px;
   background-color: #87CEEB;
@@ -71,34 +71,34 @@
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
-}
+} */
 
 /* Seção do horário */
-.secao-horario {
+/* .secao-horario {
   text-align: center;
   font-size: 1.5rem;
   color: #666;
   margin: 15px 0;
-}
+} */
 
 /* Seções topo e rodapé */
-.secao-topo, .secao-rodape {
+/* .secao-topo, .secao-rodape {
   height: 150px;
   position: relative;
-}
+} */
 
 /* Seção do bebê */
-.secao-bebe {
+/* .secao-bebe {
   margin: 20px 0;
   text-align: center;
-}
+} */
 
 /* Imagem do bebê */
-.secao-bebe img {
+/* .secao-bebe img {
   max-width: 200px;
   border-radius: 10px;
-}
-
+} */
+/* 
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -117,7 +117,7 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
+} */
 
 @keyframes logo-spin {
   from {

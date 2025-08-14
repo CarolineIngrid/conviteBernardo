@@ -4,7 +4,7 @@ import bebe from '/Bernardo.svg'
 import footerImg from '/backfooter.jpg'
 
 const CirculoData = ({ valor }) => (
-  <div className="w-14 h-14 rounded-full bg-[#7fc6d6] flex items-center justify-center shadow-md">
+  <div className="w-14 h-16 rounded-full bg-[#7fc6d6] flex items-center justify-center shadow-md">
     <span className="text-white text-lg font-bold">{valor}</span>
   </div>
 )
@@ -27,7 +27,7 @@ const BotaoLink = ({ texto, cor = "#7fc6d6", href, target = "_blank" }) => (
 const CartaoConvite = ({ dados }) => {
   return (
     <div
-      className="w-[450px] mx-auto min-h-screen flex flex-col items-center relative overflow-hidden"
+      className="w-[550px] mx-auto min-h-screen flex flex-col items-center relative overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(to bottom, #fff7ec 75%, #c9e7f5 100%)`
       }}
