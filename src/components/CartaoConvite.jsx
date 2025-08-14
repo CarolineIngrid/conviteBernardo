@@ -27,7 +27,7 @@ const BotaoLink = ({ texto, cor = "#7fc6d6", href, target = "_blank" }) => (
 const CartaoConvite = ({ dados }) => {
   return (
     <div
-      className="w-[550px] mx-auto min-h-screen flex flex-col items-center relative overflow-hidden"
+      className="w-full max-w-[550px] mx-auto min-h-screen flex flex-col items-center relative overflow-hidden px-2 sm:px-0"
       style={{
         backgroundImage: `linear-gradient(to bottom, #fff7ec 75%, #c9e7f5 100%)`
       }}
@@ -44,20 +44,20 @@ const CartaoConvite = ({ dados }) => {
         <img
           src={carroAnimais}
           alt="Carrinho com animais"
-          className="w-40 mx-auto"
+          className="w-28 sm:w-40 mx-auto"
         />
       </div>
 
       {/* Nome e idade */}
       <div className="text-center mt-4 z-10">
         <h1
-          className="text-[#f6a623] text-5xl"
+          className="text-[#f6a623] text-3xl sm:text-5xl"
           style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
         >
           {dados.nome}
         </h1>
         <h2
-          className="text-green-700 text-3xl font-bold"
+          className="text-green-700 text-xl sm:text-3xl font-bold"
           style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
         >
           {dados.idade}
