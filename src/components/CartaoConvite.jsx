@@ -52,26 +52,26 @@ const CartaoConvite = ({ dados }) => {
           <img
             src={carroAnimais}
             alt="Carrinho com animais"
-            className="w-30 sm:w-40 mx-auto"
+            className="w-25 sm:w-30 mx-auto"
           />
         </div>
 
         {/* Nome e idade */}
         <div className="text-center mt-4 z-10">
           <h1
-            className="text-[#f6a623] text-7xl sm:text-6xl"
+            className="text-[#f6a623] text-6xl sm:text-5xl"
             style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
           >
             {dados.nome}
           </h1>
           <h2
-            className="text-green-700 text-4xl sm:text-4xl font-bold"
+            className="text-green-700 text-3xl sm:text-3xl font-bold"
             style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
           >
             {dados.idade}
           </h2>
           <h2
-            className="text-green-700 text-2xl sm:text-2xl"
+            className="text-green-700 text-1xl sm:text-1xl"
             style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
           >
             <span style={{ whiteSpace: 'pre-line' }}>{dados.text}</span>
