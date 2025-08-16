@@ -177,7 +177,7 @@ const CartaoConvite = ({ dados }) => {
             O verde das árvores me faz sonhar, o balançar das folhas me faz encantar.<br /><br />
             Gosto de brincar na terra macia, engatinhar pelo quintal é só alegria!<br />
             Mas o que eu amo, de verdade e sem demora, é a água fresquinha que me diverte toda hora!<br /><br />
-            Meu tesouro é o controle da TV da vovó, os fios e as vasilhas da mamãe, ó só!<br />
+            Meu tesouro é o controle da TV da vovó, os fios e as vasilhas da mamãe, ô só!<br />
             Meu mundo é diversão e emoção, com meu tetê, sinto proteção.<br /><br />
             E quando estou com meu papai curto o cruzeiro, brincar de bola é meu passatempo certeiro!
           </p>
