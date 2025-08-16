@@ -5,6 +5,7 @@ import bebe from '/Bernardo.svg'
 // import footerImg from '/backfooter.jpg'
 import footerImg from '/image-removebg-preview (2).png'
 import zebra from '/zebra.png' // coloque sua imagem da zebra na pasta public e ajuste o caminho
+import ModalPresentes from './ModalPresentes'
 
 const CirculoData = ({ valor }) => (
   <div className="w-14 h-16 rounded-full bg-[#7fc6d6] flex items-center justify-center shadow-md">
@@ -15,11 +16,20 @@ const CirculoData = ({ valor }) => (
 const CartaoConvite = ({ dados }) => {
   const audioRef = useRef(null)
   const [tocando, setTocando] = useState(false)
+  const [modalAberto, setModalAberto] = useState(false)
 
   const tocarMusica = () => {
     if (audioRef.current) {
       audioRef.current.play()
       setTocando(true)
+    }
+  }
+
+  const pararMusica = () => {
+    if (audioRef.current) {
+      audioRef.current.pause()
+      audioRef.current.currentTime = 0
+      setTocando(false)
     }
   }
 
@@ -34,6 +44,15 @@ const CartaoConvite = ({ dados }) => {
           Tocar música
         </button>
       )}
+      {tocando && (
+        <button
+          onClick={pararMusica}
+          className="fixed top-4 right-4 z-50 bg-[#fca5a5] text-[#991b1b] px-4 py-2 rounded-full font-bold shadow"
+        >
+          Parar música
+        </button>
+      )}
+      <ModalPresentes aberto={modalAberto} aoFechar={() => setModalAberto(false)} />
       <div
         className="w-full max-w-[550px] mx-auto min-h-screen flex flex-col items-center relative overflow-hidden px-2 sm:px-0 pb-32 rounded-3xl"
         style={{
@@ -123,9 +142,9 @@ const CartaoConvite = ({ dados }) => {
               LOCAL
             </a>
             <a
-              href={dados.linkPresentes}
-              target="_blank"
-              rel="noopener noreferrer"
+              // href={dados.linkPresentes}
+              href="#"
+              onClick={e => { e.preventDefault(); setModalAberto(true) }}
               className="bg-[#b6e0ea] rounded-lg py-4 px-1 text-[#24706b] text-md font-bold shadow text-left"
               style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
             >
