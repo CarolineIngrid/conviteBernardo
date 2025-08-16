@@ -52,7 +52,7 @@ const CartaoConvite = ({ dados }) => {
           <img
             src={carroAnimais}
             alt="Carrinho com animais"
-            className="w-25 sm:w-30 mx-auto"
+            className="w-20 sm:w-30 mx-auto"
           />
         </div>
 
@@ -101,14 +101,14 @@ const CartaoConvite = ({ dados }) => {
         </div>
 
         {/* Botões interativos + Zebra */}
-        <div className="w-4/5 mt-10 z-10 flex flex-row items-center justify-center gap-4 relative">
+        <div className="w-5/6 mt-10 z-10 flex flex-row items-center justify-center relative">
           {/* Botões em coluna */}
           <div className="flex flex-col gap-3 flex-1 max-w-[180px]">
             <a
               href={`https://wa.me/+5538988537275?text=${encodeURIComponent("Olá, quero confirmar minha presença para o aniversário do Bê!")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#b6e0ea] rounded-lg py-3 px-1 text-[#24706b] text-lg font-bold shadow text-left"
+              className="bg-[#b6e0ea] rounded-lg py-4 px-1 text-[#24706b] text-md font-bold shadow text-left"
               style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
             >
               CONFIRME SUA PRESENÇA
@@ -126,7 +126,7 @@ const CartaoConvite = ({ dados }) => {
               href={dados.linkPresentes}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#b6e0ea] rounded-lg py-3 px-1 text-[#24706b] text-lg font-bold shadow text-left"
+              className="bg-[#b6e0ea] rounded-lg py-4 px-1 text-[#24706b] text-md font-bold shadow text-left"
               style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
             >
               SUGESTÃO DE PRESENTES
@@ -137,7 +137,7 @@ const CartaoConvite = ({ dados }) => {
             <img 
               src={zebra} 
               alt="Zebra fofa" 
-              className="w-80 sm:w-80 absolute right-[-50px] top-1/2 -translate-y-1/2 z-20 drop-shadow-lg"
+              className="w-64 sm:w-70 absolute right-[-60px] top-1/2 -translate-y-1/2 z-20 drop-shadow-lg"
               style={{ pointerEvents: 'none' }}
             />
           </div>
