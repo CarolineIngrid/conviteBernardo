@@ -16,7 +16,7 @@ const ModalPresentes = ({ aberto, aoFechar }) => {
         >
           ×
         </button>
-        <h2 className="text-[#f6a623] text-2xl font-bold mb-4" style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}>
+        <h2 className="text-[#f6a623] text-2xl text-center font-bold mb-4" style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}>
           Sugestão de Presentes
         </h2>
         <ul className="text-[#075a3a] text-lg font-medium space-y-2">
