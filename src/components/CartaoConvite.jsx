@@ -106,9 +106,10 @@ const CartaoConvite = ({ dados }) => {
           <div
             className="w-28 h-2 mx-auto rounded-full"
             style={{
-              marginTop: '-10px',
-              background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0) 100%)',
-              filter: 'blur(1px)',
+              marginTop: '-12px',
+              marginLeft: '18px', // desloca a sombra para a direita
+              background: 'radial-gradient(ellipse at 60% 60%, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0) 100%)',
+              filter: 'blur(3px)',
               opacity: 0.7,
             }}
           />
