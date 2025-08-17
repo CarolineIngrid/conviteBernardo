@@ -104,9 +104,9 @@ const CartaoConvite = ({ dados }) => {
           <img src={bebe} alt="Bebê" className="w-40 mx-auto" />
           {/* Sombra no pé da foto */}
           <div
-            className="w-24 h-4 mx-auto rounded-full"
+            className="w-28 h-2 mx-auto rounded-full"
             style={{
-              marginTop: '-18px',
+              marginTop: '-10px',
               background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0) 100%)',
               filter: 'blur(1px)',
               opacity: 0.7,
