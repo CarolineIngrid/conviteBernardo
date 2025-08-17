@@ -2,10 +2,10 @@ import React, { useRef, useState } from 'react'
 import folhasTopo from '/plantaestrela.svg'
 import carroAnimais from '/carrinho.png'
 import bebe from '/Bernardo.svg'
-// import footerImg from '/backfooter.jpg'
 import footerImg from '/image-removebg-preview (2).png'
 import zebra from '/zebra.png' // coloque sua imagem da zebra na pasta public e ajuste o caminho
 import ModalPresentes from './ModalPresentes'
+import ModalConfirmacao from './ModalConfirmacao'
 
 const CirculoData = ({ valor }) => (
   <div className="w-14 h-16 rounded-full bg-[#7fc6d6] flex items-center justify-center shadow-md">
@@ -17,6 +17,7 @@ const CartaoConvite = ({ dados }) => {
   const audioRef = useRef(null)
   const [tocando, setTocando] = useState(false)
   const [modalAberto, setModalAberto] = useState(false)
+  const [modalConfirmarAberto, setModalConfirmarAberto] = useState(false)
 
   const tocarMusica = () => {
     if (audioRef.current) {
@@ -53,6 +54,7 @@ const CartaoConvite = ({ dados }) => {
         </button>
       )}
       <ModalPresentes aberto={modalAberto} aoFechar={() => setModalAberto(false)} />
+      <ModalConfirmacao aberto={modalConfirmarAberto} aoFechar={() => setModalConfirmarAberto(false)} />
       <div
         className="w-full max-w-[550px] mx-auto min-h-screen flex flex-col items-center relative overflow-hidden px-2 sm:px-0 pb-32 rounded-3xl"
         style={{
@@ -124,9 +126,8 @@ const CartaoConvite = ({ dados }) => {
           {/* Botões em coluna */}
           <div className="flex flex-col gap-3 flex-1 max-w-[180px]">
             <a
-              href={`https://wa.me/+5538988537275?text=${encodeURIComponent("Olá, quero confirmar minha presença para o aniversário do Bê!")}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
+              onClick={e => { e.preventDefault(); setModalConfirmarAberto(true) }}
               className="bg-[#b6e0ea] rounded-lg py-4 px-1 text-[#24706b] text-md font-bold shadow text-left"
               style={{ fontFamily: "'Londrina Solid', Arial, sans-serif" }}
             >
